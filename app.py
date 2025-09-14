@@ -35,7 +35,7 @@ if st.button("Send Message"):
                 messages=messages
             )
             
-            answer = response.get("choices")[0]["message"]["content"]  # Will throw error
+            answer = response.get("choices")[0]["message"]["content"]
             
         except Exception as e:
             answer = f"Oops! Something went wrong: {e}"
@@ -47,6 +47,6 @@ if st.button("Send Message"):
 
 # Display the chat
 for entry in st.session_state.history[::-1]:
-    # Assuming entry is a tuple, but it's just a string
-    st.write(f"**User:** {entry[0]}")  # This will fail if entry is a string
+  
+    st.write(f"**User:** {entry[0]}") 
     st.write(f"**Bot:** {entry[1] if len(entry) > 1 else 'No reply stored.'}")
