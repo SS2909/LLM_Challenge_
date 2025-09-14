@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 
-openai.api_key = "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"
+openai.api_key = ""
 
 st.title("Simple Chat App")
 
