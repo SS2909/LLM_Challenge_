@@ -10,11 +10,4 @@
    streamlit run app.py
    ```
 
-3. Enter your OpenAI API key directly in the code (hardcoded).
-
-## Notes
-
-- No authentication
-- No database
-- No document ingestion (TODO)
-- Very minimal features
+3. Enter your OpenAI API key directly in the code.
